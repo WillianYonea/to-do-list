@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/abd7837b51.js" crossorigin="anonymous"></script>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+</head>
+<body>
+
+    <div id="todo-container">
+        <div class="container">
+            <header>
+                <h1>To-do List</h1>
+            </header>
+            <div class="divider">
+    
+            </div>
+            <form id="todo-form" class="form">
+                <input type="text" id="todo-input" placeholder="Adicionar tarefa">
+                <button type="submit">
+                    <img src="img/circle-plus-solid.svg" alt="icone plus" style="width: 25px;">
+                </button>
+            </form>
+            <form id="edit-form" class="form hide">
+                <input type="text" id="edit-input" placeholder="Adicionar tarefa">
+                <button type="submit">
+                    <img src="img/circle-check-solid.svg" alt="icone plus" style="width: 25px;">
+                </button>
+                <button type="submit" id="cancel-edit-btn">
+                    <img src="img/xmark-solid.svg" alt="icone plus" style="width: 25px;">
+                </button>
+            </form>
+            <div class="divider">
+    
+            </div>
+            <div id="list-container">
+                <div class="task">
+                    <h3 class="task-description">Estudar JavaScript</h3>
+                    <button class="finish-todo">
+                        <img src="img/circle-check-solid.svg" alt="icone plus">
+                    </button>
+                    <button class="edit-todo">
+                        <img src="img/pencil-solid.svg" alt="icone edit">
+                    </button>
+                    <button class="remove-todo">
+                        <img src="img/trash-solid.svg" alt="icone trash">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

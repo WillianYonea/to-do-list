@@ -1,0 +1,118 @@
+/* Configurações Gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#todo-container {
+    max-width: 420px;
+    background-color: #D9D9D9;
+    margin: 5rem auto;
+    border-radius: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+Button {
+    all: unset;
+    cursor: pointer;
+}
+
+img {
+    width: 1.6rem;
+    height: 1.6rem;
+    padding-top: 4px;
+}
+
+button img {
+    pointer-events: none;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #353535;;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 0 1rem 0;
+    color: #353535;
+}
+
+/* Insert Container */
+
+.form {
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.form input {
+    width: 70%;
+    min-width: 180px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+/* List Container */
+
+#list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    border: 1px solid #353535;
+    border-radius: 30px;
+    transition: 0.5s;
+    padding: 5px 10px 5px 0;
+}
+
+.task-description {
+    width: 70%;
+    min-width: 180px;
+    min-height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    /* border: 1px solid #353535; */
+    border-radius: 30px;
+    padding-top: 0.4rem;
+    color: #6B6B6B;
+}
+
+.task-buttons {
+    height: 30px;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: #7AC778;
+}
+
